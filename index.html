@@ -11,22 +11,34 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
-
     <!-- Navbar -->
+
+    <div style="z-index: -3">
+      <video
+        loop
+        autoplay
+        muted
+        style="position: fixed; width: 100%; height: 100vh; top: 0; left: 0"
+      >
+        <source
+          src="/assests/vecteezy_caucasian-girl-is-keeping-a-green-seedling-and-soil-in-her_29598101.mov"
+          type="video/mp4"
+        />
+      </video>
+    </div>
 
     <nav
       class="navbar text-white navbar-expand-lg"
-      style="background-color: rgba(16, 94, 22, 1)"
+      style="background-color: rgba(16, 94, 22, 1); padding: 0; z-index: 9"
     >
       <div class="container">
-        <a class="navbar-brand" href="#"
-          ><img
-            src="/assests/-DKV-.png"
-            alt=""
-            style="height: 80px"
-        /></a>
+        <a href="#"><img src="/assests/-DKV-.png" style="height: 105px" /></a>
         <button
           class="navbar-toggler"
           type="button"
@@ -38,7 +50,10 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <div
+          class="collapse navbar-collapse justify-content-end"
+          id="navbarNav"
+        >
           <ul class="navbar-nav px-5">
             <li class="nav-item fw-semibold">
               <a class="nav-link active text-white" aria-current="page" href="#"
@@ -46,7 +61,13 @@
               >
             </li>
             <li class="nav-item fw-semibold dropdown">
-              <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Çalışmalarımız</a>
+              <a
+                class="nav-link text-white dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                href="#"
+                >Çalışmalarımız</a
+              >
               <ul class="dropdown-menu dropdown-menu">
                 <li><a class="dropdown-item" href="#">Orman</a></li>
                 <li><a class="dropdown-item" href="#">Kırsal Kalkınma</a></li>
@@ -55,14 +76,22 @@
               </ul>
             </li>
             <li class="nav-item fw-semibold dropdown">
-              <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Gönüllülük</a>
+              <a
+                class="nav-link text-white dropdown-toggle"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+                href="#"
+                >Gönüllülük</a
+              >
               <ul class="dropdown-menu dropdown-menu">
                 <li><a class="dropdown-item" href="#">Gönüllü Olmak</a></li>
                 <li><a class="dropdown-item" href="#">Temsilci Olmak</a></li>
               </ul>
             </li>
             <li class="nav-item fw-semibold">
-              <a class="nav-link text-white" aria-disabled="true">Bağış ve Destek</a>
+              <a class="nav-link text-white" aria-disabled="true"
+                >Bağış ve Destek</a
+              >
             </li>
             <li class="nav-item fw-semibold">
               <a class="nav-link text-white" aria-disabled="true">Hakkımızda</a>
@@ -79,5 +108,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
