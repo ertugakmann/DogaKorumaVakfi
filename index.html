@@ -13,16 +13,19 @@
     />
   </head>
   <body>
+
+    <!-- Navbar -->
+
     <nav
       class="navbar text-white navbar-expand-lg"
-      style="background-color: #105e16"
+      style="background-color: rgba(16, 94, 22, 1)"
     >
-      <div class="container-fluid">
+      <div class="container">
         <a class="navbar-brand" href="#"
           ><img
-            src="https://www.tema.org.tr/Content/Icons/tema-logo.png"
+            src="/assests/-DKV-.png"
             alt=""
-            style="height: 60px"
+            style="height: 80px"
         /></a>
         <button
           class="navbar-toggler"
@@ -35,26 +38,40 @@
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+          <ul class="navbar-nav px-5">
             <li class="nav-item fw-semibold">
               <a class="nav-link active text-white" aria-current="page" href="#"
-                >Home</a
+                >Anasayfa</a
               >
             </li>
-            <li class="nav-item fw-semibold">
-              <a class="nav-link text-white" href="#">Features</a>
+            <li class="nav-item fw-semibold dropdown">
+              <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Çalışmalarımız</a>
+              <ul class="dropdown-menu dropdown-menu">
+                <li><a class="dropdown-item" href="#">Orman</a></li>
+                <li><a class="dropdown-item" href="#">Kırsal Kalkınma</a></li>
+                <li><a class="dropdown-item" href="#">Eğitim</a></li>
+                <li><a class="dropdown-item" href="#">İklim</a></li>
+              </ul>
+            </li>
+            <li class="nav-item fw-semibold dropdown">
+              <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false" href="#">Gönüllülük</a>
+              <ul class="dropdown-menu dropdown-menu">
+                <li><a class="dropdown-item" href="#">Gönüllü Olmak</a></li>
+                <li><a class="dropdown-item" href="#">Temsilci Olmak</a></li>
+              </ul>
             </li>
             <li class="nav-item fw-semibold">
-              <a class="nav-link text-white" href="#">Pricing</a>
+              <a class="nav-link text-white" aria-disabled="true">Bağış ve Destek</a>
             </li>
             <li class="nav-item fw-semibold">
-              <a class="nav-link text-white" aria-disabled="true">Disabled</a>
+              <a class="nav-link text-white" aria-disabled="true">Hakkımızda</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+
     <!-- Scripts -->
 
     <script
