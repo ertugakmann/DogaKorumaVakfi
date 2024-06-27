@@ -277,3 +277,20 @@ footer{
     background-color: #fff;
     color: #125C13;
 }
+
+@media (max-width:768px) {
+  .side-menu{
+    display: none;
+  
+  }
+  .content{
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  .msg{
+    max-height: 50px;
+  }
+}
+
