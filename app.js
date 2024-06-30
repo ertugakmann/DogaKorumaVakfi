@@ -1,64 +1,79 @@
-const form = document.getElementById('form');
-const email = document.getElementById('email');
-const name = document.getElementById('name');
-const phone = document.getElementById('phone');
+const form = document.getElementById("form");
+const email = document.getElementById("email");
+const name = document.getElementById("name");
+const phone = document.getElementById("phone");
 
-function error(input,message){  // hatalı durumda geçerli
-  input.className = 'form-control is-invalid';
+function error(input, message) {
+  // hatalı durumda geçerli
+  input.className = "form-control is-invalid";
   const div = input.nextElementSibling;
   div.innerText = message;
-  div.className = 'invalid-feedback';
+  div.className = "invalid-feedback";
 }
 
-function success(input){  // başarılı olduğunda geçerli
-  input.className = 'form-control is-valid';
+function success(input) {
+  // başarılı olduğunda geçerli
+  input.className = "form-control is-valid";
 }
 
-function checkEmail(input) {  // e-posta adresi formatını kontrol eder
+function checkEmail(input) {
+  // e-posta adresi formatını kontrol eder
   const re =
-  /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
-  //  return re.test(String(email).toLowerCase());  
-  
-  if(re.test(input.value)) {
-      success(input);
+    /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+  //  return re.test(String(email).toLowerCase());
+
+  if (re.test(input.value)) {
+    success(input);
   } else {
-      error(input, 'Hatalı email girdiniz');
+    error(input, "Hatalı email girdiniz");
   }
 }
 
-function checkRequired(inputs) {  // belirli form elemanlarının boş olup olmadığını kontrol eder
-  inputs.forEach (function(input){
-      if(input.value === '') {
-          error(input,`${input.id} gerekli`);
-      } else {
-          success(input);
-      }
-  })
+function checkRequired(inputs) {
+  // belirli form elemanlarının boş olup olmadığını kontrol eder
+  inputs.forEach(function (input) {
+    if (input.value === "") {
+      error(input, `${input.id} gerekli`);
+    } else {
+      success(input);
+    }
+  });
 }
 
-function checkLength(input, min, max) {   // belirli bir form elemanının uzunluğunu belirli bir aralıkta kontrol eder
-  if(input.value.length < min) {
-      error(input, `${input.id} en az ${min} karakter olmalıdır.`);
-  } else if(input.value.length > max) {
-      error(input, `${input.id} en fazla ${max} karakter olmalıdır.`);
+function checkLength(input, min, max) {
+  // belirli bir form elemanının uzunluğunu belirli bir aralıkta kontrol eder
+  if (input.value.length < min) {
+    error(input, `${input.id} en az ${min} karakter olmalıdır.`);
+  } else if (input.value.length > max) {
+    error(input, `${input.id} en fazla ${max} karakter olmalıdır.`);
   } else {
-      success(input);
+    success(input);
   }
 }
 
-function checkPhone(input){  // bir telefon numarasının 10 haneli olup olmadığını kontrol eder
+function checkPhone(input) {
+  // bir telefon numarasının 10 haneli olup olmadığını kontrol eder
   var exp = /^\d{10}$/;
-  if(!exp.test(input.value)) {
-      error(input,'telefon 10 haneli olmalı');
-  } 
+  if (!exp.test(input.value)) {
+    error(input, "telefon 10 haneli olmalı");
+  }
 }
 
-form.addEventListener('submit',function(e){  // form elemanlarının durumunu kontrol eder
-  e.preventDefault();  // sayesinde formun varsayılan davranışı (sayfanın yeniden yüklenmesi) engellenir
+// Counter
 
-  checkRequired([email, name ,phone]);
-  checkEmail(email);
-  checkLength(name,7,15);
-  checkPhone(phone);
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 1000;
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
 });
 
+// Gallery

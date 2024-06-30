@@ -1,27 +1,56 @@
 html,
 body {
-  
-    overflow-x: hidden;
+  overflow-x: hidden;
 }
 
-.hero-outline{
+/* Go top btn */
+
+.go-top-btn {
+  position: fixed;
+  bottom: 35px;
+  right: 35px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 60px;
+  width: 60px;
+  background: #fff;
+  border: 3px solid #c7c6c6;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+}
+
+.go-top-btn img {
+  width: 50px;
+  height: 50px;
+}
+
+.go-top-btn:hover {
+  height: 65px;
+  width: 65px;
+  transition: 0.3s;
+  padding: 3rem;
+}
+
+.hero-outline {
   height: 100vh;
 }
-.hero{
+.hero {
   position: relative;
   width: 100%;
   height: 100vh;
 }
-.back-video-overlay{
-position: absolute;
-top: 0;
-left: 0;
-width: 100%;
-height: 100%;
-background-color: rgba(0, 0, 0, 0.3);
-z-index:1;
+.back-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 1;
 }
-.back-video{
+.back-video {
   position: absolute;
   top: 0;
   left: 0;
@@ -38,7 +67,7 @@ z-index:1;
   color: white;
   font-size: 3rem;
   text-align: center;
-  z-index:2;
+  z-index: 2;
 }
 
 /* card section */
@@ -47,301 +76,298 @@ z-index:1;
   margin: 8em 0;
 }
 
-.card-effect:hover{
-    border: 2px solid #125C13;
-    transition: all 0.2s;
+.card-effect:hover {
+  border: 2px solid #125c13;
+  transition: all 0.2s;
 }
 
-.text-color{
-    color: #125C13;
+.text-color {
+  color: #125c13;
 }
 
 /* counter section */
 
 .counter-img {
-    width: 100%;
-    height: 300px;
-    background-image: url(/assests/orman2.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 70%;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: 300px;
+  background-image: url(/assests/orman2.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+  background-size: cover;
+  background-attachment: fixed;
+  position: relative;
+  overflow: hidden;
 }
 
 /* Donate Section */
 
 .donate-img {
-    width: 100%;
-    height: 400px;
-    margin-bottom: 20px;
-    background-image: url(/assests/damla.jpg);
-    background-repeat: no-repeat;
-    background-position: 0 70%;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
+  width: 100%;
+  height: 400px;
+  margin-bottom: 20px;
+  background-image: url(/assests/damla.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 70%;
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
 }
 
- /* Events Section */
+/* Events Section */
 
- .events-section{
-   margin: 6em 0;
+.events-section {
+  margin: 6em 0;
+}
 
- }
+.slide-container {
+  max-width: 1120px;
+  width: 100%;
+  padding: 40px 0;
+}
 
- .slide-container{
-    max-width: 1120px;
-    width: 100%;
-    padding: 40px 0;
-  }
+.slide-content {
+  margin: 0 40px;
+  overflow: hidden;
+  border-radius: 25px;
+}
 
-  .slide-content{
-    margin: 0 40px;
-    overflow: hidden;
-    border-radius: 25px;
-  }
+.card {
+  border-radius: 25px;
+  background-color: #fff;
+}
 
-  .card{
-    border-radius: 25px;
-    background-color: #FFF;
-  }
+.image-content,
+.card-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 14px;
+}
 
-  .image-content,
-  .card-content{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 10px 14px;
-  }
+.image-content {
+  position: relative;
+  row-gap: 5px;
+  padding: 25px 0;
+}
 
-  .image-content{
-    position: relative;
-    row-gap: 5px;
-    padding: 25px 0;
-  }
+.overlay {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #125c13;
+  border-radius: 25px 25px 0 25px;
+}
 
-  .overlay{
-    position: absolute;
-    left: 0;
-    top: 0;
-    height: 100%;
-    width: 100%;
-    background-color: #125C13;
-    border-radius: 25px 25px 0 25px;
-  }
+.overlay::before,
+.overlay::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: -40px;
+  height: 40px;
+  width: 40px;
+  background-color: #125c13;
+}
 
-  .overlay::before,
-  .overlay::after{
-    content: '';
-    position: absolute;
-    right: 0;
-    bottom: -40px;
-    height: 40px;
-    width: 40px;
-    background-color: #125C13;
-  }
+.overlay::after {
+  border-radius: 0 25px 0 0;
+  background-color: #fff;
+}
 
-  .overlay::after{
-    border-radius: 0 25px 0 0;
-    background-color: #FFF;
-  }
+.card-image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 3px;
+}
 
-  .card-image{
-    position: relative;
-    height: 150px;
-    width: 150px;
-    border-radius: 50%;
-    background: #FFF;
-    padding: 3px;
-  }
+.card-image .card-img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #125c13;
+}
 
-  .card-image .card-img{
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 4px solid #125C13;
-  }
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: #333;
+}
 
-  .name{
-    font-size: 18px;
-    font-weight: 500;
-    color: #333;
-  }
+.description {
+  font-size: 14px;
+  color: #707070;
+  text-align: center;
+}
 
-  .description{
-    font-size: 14px;
-    color: #707070;
-    text-align: center;
-  }
+.button {
+  border: none;
+  font-size: 16px;
+  color: #fff;
+  padding: 8px 16px;
+  background-color: #125c13;
+  border-radius: 6px;
+  margin: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
 
-  .button{
-    border: none;
-    font-size: 16px;
-    color: #FFF;
-    padding: 8px 16px;
-    background-color: #125C13;
-    border-radius: 6px;
-    margin: 14px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-  }
+.button:hover {
+  background: #125c13;
+}
 
-  .button:hover{
-    background: #125C13;
-  }
-  
-  .swiper-navBtn{
-    color: #125C13;
-    transition: color 0.3s ease;
-  }
+.swiper-navBtn {
+  color: #125c13;
+  transition: color 0.3s ease;
+}
 
-  .swiper-navBtn:hover{
-    color: #125C13;
-  }
-  .swiper-navBtn::before,
-  .swiper-navBtn::after{
-    font-size: 35px;
-  }
+.swiper-navBtn:hover {
+  color: #125c13;
+}
+.swiper-navBtn::before,
+.swiper-navBtn::after {
+  font-size: 35px;
+}
 
-  .swiper-button-next{
-    right: 0;
-  }
+.swiper-button-next {
+  right: 0;
+}
 
-  .swiper-button-prev{
-    left: 0;
-  }
+.swiper-button-prev {
+  left: 0;
+}
 
-  .swiper-pagination-bullet{
-    background-color: #125C13;
-    opacity: 1;
-  }
+.swiper-pagination-bullet {
+  background-color: #125c13;
+  opacity: 1;
+}
 
-  .swiper-pagination-bullet-active{
-    background-color: #125C13;
-  }
+.swiper-pagination-bullet-active {
+  background-color: #125c13;
+}
 
-  /* Galerry Section */
+/* Galerry Section */
 
-  .gallery-block{
-    padding-bottom: 60px;
-    padding-top: 60px;
-  }
-  
-  .gallery-block .heading{
-      margin-bottom: 50px;
-      text-align: center;
-  }
-  
-  .gallery-block .heading h2{
-      font-weight: bold;
-      font-size: 1.4rem;
-      text-transform: uppercase;
-  }
-  
-  .gallery-block.compact-gallery .item{
-    overflow: hidden;
-    margin-bottom: 0;
-    opacity: 1;
-  }
-  
-  .gallery-block.compact-gallery .item .image{
-    transition: 0.8s ease;
-  }
-  
-  .gallery-block.compact-gallery .item .info{
-    position: relative;
-      display: inline-block;
-  }
-  
-  .gallery-block.compact-gallery .item .description{
-      display: grid;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      color: #fff;
-      padding: 10px;
-      font-size: 17px;
-      line-height: 18px;
-      width: 100%;
-      padding-top: 15px;
-      padding-bottom: 15px;
-      opacity: 1;
-      color: #fff;
-      transition: 0.8s ease;
-      text-align: center;
-      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-      background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
-  }
-  
-  .gallery-block.compact-gallery .item .description .description-heading{
-    font-size: 1em;
-    font-weight: bold;
-  }
-  
-  .gallery-block.compact-gallery .item .description .description-body{
-    font-size: 0.8em;
-    margin-top: 10px;
-    font-weight: 300;
-  }
-  
+.gallery-block {
+  padding-bottom: 60px;
+  padding-top: 60px;
+}
+
+.gallery-block .heading {
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.gallery-block .heading h2 {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
+
+.gallery-block.compact-gallery .item {
+  overflow: hidden;
+  margin-bottom: 0;
+  opacity: 1;
+}
+
+.gallery-block.compact-gallery .item .image {
+  transition: 0.8s ease;
+}
+
+.gallery-block.compact-gallery .item .info {
+  position: relative;
+  display: inline-block;
+}
+
+.gallery-block.compact-gallery .item .description {
+  display: grid;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  font-size: 17px;
+  line-height: 18px;
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  opacity: 1;
+  color: #fff;
+  transition: 0.8s ease;
+  text-align: center;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.39));
+}
+
+.gallery-block.compact-gallery .item .description .description-heading {
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.gallery-block.compact-gallery .item .description .description-body {
+  font-size: 0.8em;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
 /* footer */
 
-footer{
-    background-color: #125C13;
+footer {
+  background-color: #125c13;
 }
 
-.social:hover{
-    background-color: #fff;
-    color: #125C13;
+.social:hover {
+  background-color: #fff;
+  color: #125c13;
 }
 
 @media screen and (max-width: 768px) {
-  .card-section, 
-  .section-counter, 
+  .card-section,
+  .section-counter,
   .section-volunteers {
     margin: 10em 0;
   }
 
-  .slide-content{
+  .slide-content {
     margin: 0 10px;
   }
 
-  .swiper-navBtn{
+  .swiper-navBtn {
     display: none;
   }
 
-  .side-menu{
+  .side-menu {
     display: none;
-
   }
 
-  .content{
+  .content {
     font-size: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
   }
 
-  .msg{
+  .msg {
     max-height: 50px;
   }
 }
 
 @media (min-width: 576px) {
-
   .gallery-block.compact-gallery .item .description {
-    opacity: 0; 
+    opacity: 0;
   }
 
   .gallery-block.compact-gallery .item a:hover .description {
-    opacity: 1; 
-  } 
+    opacity: 1;
+  }
 
   .gallery-block .zoom-on-hover:hover .image {
     transform: scale(1.3);
-    opacity: 0.7; 
+    opacity: 0.7;
   }
 }
