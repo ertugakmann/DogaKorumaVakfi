@@ -77,3 +77,10 @@ valueDisplays.forEach((valueDisplay) => {
 });
 
 // Gallery
+
+const dropdown = document.querySelector(".dropdown");
+
+dropdown.addEventListener("click", function () {
+  const dropdownMenu = document.querySelector(".dropdown-menuu");
+  dropdownMenu.classList.toggle("show");
+});

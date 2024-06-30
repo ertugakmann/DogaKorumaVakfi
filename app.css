@@ -371,3 +371,15 @@ footer {
     opacity: 0.7;
   }
 }
+
+@media (max-width: 1361px) {
+  .side-menu {
+    display: none;
+  }
+  .content {
+    padding-left: 2% !important;
+    padding-right: 2% !important;
+    margin: 0% !important;
+    width: 100% !important;
+  }
+}
