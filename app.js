@@ -3,6 +3,25 @@ const email = document.getElementById("email");
 const name = document.getElementById("name");
 const phone = document.getElementById("phone");
 
+// Counter
+
+let valueDisplays = document.querySelectorAll(".num");
+let interval = 1000;
+valueDisplays.forEach((valueDisplay) => {
+  let startValue = 0;
+  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
+  let duration = Math.floor(interval / endValue);
+  let counter = setInterval(function () {
+    startValue += 1;
+    valueDisplay.textContent = startValue;
+    if (startValue == endValue) {
+      clearInterval(counter);
+    }
+  }, duration);
+});
+
+// gonulluluk.html from
+
 function error(input, message) {
   // hatalı durumda geçerli
   input.className = "form-control is-invalid";
@@ -59,28 +78,22 @@ function checkPhone(input) {
   }
 }
 
-// Counter
+form.addEventListener('submit', function (e) {
+  // form elemanlarının durumunu kontrol eder
+  e.preventDefault();
+  // sayesinde formun varsayılan davranışı (sayfanın yeniden yüklenmesi) engellenir
 
-let valueDisplays = document.querySelectorAll(".num");
-let interval = 1000;
-valueDisplays.forEach((valueDisplay) => {
-  let startValue = 0;
-  let endValue = parseInt(valueDisplay.getAttribute("data-val"));
-  let duration = Math.floor(interval / endValue);
-  let counter = setInterval(function () {
-    startValue += 1;
-    valueDisplay.textContent = startValue;
-    if (startValue == endValue) {
-      clearInterval(counter);
-    }
-  }, duration);
+  checkRequired([email, name, phone]);
+  checkEmail(email);
+  checkLength(name, 7, 15);
+  checkPhone(phone);
 });
 
-// Gallery
+// Dropdown
 
 const dropdown = document.querySelector(".dropdown");
 
 dropdown.addEventListener("click", function () {
-  const dropdownMenu = document.querySelector(".dropdown-menuu");
+  const dropdownMenu = document.querySelector(".dropdown-menu");
   dropdownMenu.classList.toggle("show");
 });

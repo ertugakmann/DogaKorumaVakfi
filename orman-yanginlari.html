@@ -7,8 +7,7 @@
     <title>Doğa Koruma Vakfı</title>
     <link rel="stylesheet" href="/app.css" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" 
-        crossorigin="anonymous" />
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
         integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
@@ -19,219 +18,314 @@
 
 <body>
 
- <!-- Navbar -->
+    <!-- Navbar -->
 
- <nav class="navbar text-white navbar-expand-lg p-0" style="background-color: #125C13;">
-    <div class="container">
-        <a href="index.html"><img src="/assests/-DKV-.png" alt="dkv-logo" style="height: 105px"/></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-            <ul class="navbar-nav px-5">
-                <li class="nav-item fw-semibold">
-                    <a class="nav-link active text-white" aria-current="page" href="index.html">Anasayfa</a>
-                </li>
-                <li class="nav-item fw-semibold dropdown">
-                    <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
-                        href="#">Çalışmalarımız</a>
-                    <ul class="dropdown-menu dropdown-menu">
-                        <li><a class="dropdown-item" href="cevre-kirliligi.html">Çevre Kirliliği</a></li>
-                        <li><a class="dropdown-item" href="iklim-degisikligi.html">İklim Değişiklği</a></li>
-                        <li><a class="dropdown-item" href="orman-yanginlari.html">Orman Yangınları</a></li>
-                        <li><a class="dropdown-item" href="su-kaynaklari.html">Su Kaynakları</a></li>
-                    </ul>
-                </li>
-                <li class="nav-item fw-semibold dropdown">
-                    <a class="nav-link text-white" aria-expanded="false"
-                        href="gonulluluk.html">Gönüllülük</a>
-                </li>
-                <li class="nav-item fw-semibold">
-                    <a href="bagis-destek.html" class="nav-link text-white" aria-disabled="true">Bağış ve Destek</a>
-                </li>
-                <li class="nav-item fw-semibold">
-                    <a href="#" class="nav-link text-white" aria-disabled="true">Hakkımızda</a>
-                </li>
-            </ul>
+    <nav class="navbar text-white navbar-expand-lg p-0" style="background-color: #125C13;">
+        <div class="container">
+            <a href="index.html"><img src="/assests/-DKV-.png" alt="dkv-logo" style="height: 105px" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav px-5">
+                    <li class="nav-item fw-semibold">
+                        <a class="nav-link active text-white" aria-current="page" href="index.html">Anasayfa</a>
+                    </li>
+                    <li class="nav-item fw-semibold dropdown">
+                        <a class="nav-link text-white dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"
+                            href="#">Çalışmalarımız</a>
+                        <ul class="dropdown-menu dropdown-menu">
+                            <li><a class="dropdown-item" href="cevre-kirliligi.html">Çevre Kirliliği</a></li>
+                            <li><a class="dropdown-item" href="iklim-degisikligi.html">İklim Değişiklği</a></li>
+                            <li><a class="dropdown-item" href="orman-yanginlari.html">Orman Yangınları</a></li>
+                            <li><a class="dropdown-item" href="su-kaynaklari.html">Su Kaynakları</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item fw-semibold dropdown">
+                        <a class="nav-link text-white" aria-expanded="false" href="gonulluluk.html">Gönüllülük</a>
+                    </li>
+                    <li class="nav-item fw-semibold">
+                        <a href="bagis-destek.html" class="nav-link text-white" aria-disabled="true">Bağış ve Destek</a>
+                    </li>
+                    <li class="nav-item fw-semibold">
+                        <a href="#" class="nav-link text-white" aria-disabled="true">Hakkımızda</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-    </div>
-</nav>
+    </nav>
 
- <!-- Article -->
+    <!-- Article -->
 
- <main class="container">
-    <div class="content d-flex my-5">
-        <div class="col-4 side-menu">
-            <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
-                <nav class="nav nav-pills flex-column">
-                    <a class="nav-link" href="#item-1">Orman Nedir?</a>
+    <main class="container">
+        <div class="content d-flex my-5">
+            <div class="col-4 side-menu">
+                <nav id="navbar-example3" class="h-100 flex-column align-items-stretch pe-4 border-end">
                     <nav class="nav nav-pills flex-column">
-                        <a class="nav-link ms-3 my-1" href="#item-1-1">Orman Yangını Nedir?</a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-2">Orman Yangını Türleri Nelerdir?</a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-3">Orman Yangınları Neden Çıkar?</a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-4">Türkiye'de Orman Yangınları Neden Çıkıyor?</a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-5">Türkiye'de Her Yıl Ne Kadar Orman Yanıyor?</a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-6">Orman Yangınlarını Önlemek Ya Da Etkilerini Azaltmak İçin Neler Yapmalıyız?</a>
+                        <a class="nav-link link-success" href="#item-1">Orman Nedir?</a>
                         <nav class="nav nav-pills flex-column">
-                          <a class="nav-link ms-5 my-1" href="#item-1-6-1">Yurttaşlara Düşen Sorumluluklar:</a>
+                            <a class="nav-link link-success ms-3 my-1" href="#item-1-1">
+                                Orman Yangını Nedir?
+                            </a>
+                            <a class="nav-link link-success ms-3 my-1" href="#item-1-2">
+                                Orman Yangını Türleri Nelerdir?
+                            </a>
+                            <a class="nav-link link-success ms-3 my-1" href="#item-1-3">
+                                Orman Yangınları Neden Çıkar?
+                            </a>
+                            <a class="nav-link link-success ms-3 my-1" href="#item-1-4">
+                                Türkiye'de Orman Yangınları Neden Çıkıyor?
+                            </a>
+                            <a class="nav-link link-success ms-3 my-1" href="#item-1-5">
+                                Türkiye'de Her Yıl Ne Kadar Orman Yanıyor?
+                            </a>
+                            <a class="nav-link link-success ms-3 my-1" href="#item-1-6">
+                                Orman Yangınlarını Önlemek Ya Da Etkilerini Azaltmak İçin Neler Yapmalıyız?
+                            </a>
+                            <nav class="nav nav-pills flex-column">
+                                <a class="nav-link link-success ms-5 my-1" href="#item-1-6-1">
+                                    Yurttaşlara Düşen Sorumluluklar:
+                                </a>
+                            </nav>
+                            <a class="nav-link link-success ms-3 my-1" href="#item-1-7">
+                                Orman Yangınlarını Önlmek İçin Yapılması Gerekenler.
+                            </a>
+                            <a class="nav-link link-success ms-3 my-1" href="#item-1-8">
+                                Orman Yangınlarını Önlmek İçin Yapılmaması Gerekenler.
+                            </a>
+                            <a class="nav-link link-success ms-3 my-1" href="#item-1-9">
+                                Orman Yangınının Yaban Hayatı Üzerindeki Etkileri Nelerdir?
+                            </a>
                         </nav>
-                        <a class="nav-link ms-3 my-1" href="#item-1-7">
-                            Orman Yangınlarını Önlmek İçin Yapılması Gerekenler.
-                        </a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-8">
-                            Orman Yangınlarını Önlmek İçin Yapılmaması Gerekenler.
-                        </a>
-                        <a class="nav-link ms-3 my-1" href="#item-1-9">
-                            Orman Yangınının Yaban Hayatı Üzerindeki Etkileri Nelerdir?
-                        </a>
                     </nav>
                 </nav>
-            </nav>
-        </div>
-
-        <div class="col-8 content">
-            <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
-                class="scrollspy-example-2" tabindex="0">
-                <div id="item-1">
-                    <h1>Orman Nedir?</h1> 
-                    <p>Orman denilince akla ağaçlar gelir. Bir arazi parçasının orman olup olmamasını belirleyen ana unsur ağaçlardırOrmanın ne olduğuna ya da ne olmadığına karar verirken temelde ağaçlara bakıyor olmamıza rağmen ormanın yalnızca ağaçlardan meydana geldiğini düşünmek  yanıltıcıdır. Orman bir ekosistemdir ve bu ekosistemde ağaçlarla birlikte diğer canlılar (çalılar ve otsu bitkiler, hayvanlar,  mikroorganizmalar vb.) ile hava, toprak ve su gibi unsurlar belirli bir denge içerisinde bir arada bulunurlar. Aslında orman ağaçlarla  birlikte diğer pek çok canlı türünün, hava, toprak ve su ile etkileşim içerisinde oluşturmuş olduğu bir yaşam birliğidir. O nedenle  adına orman dediğimiz bu yaşam birliği, bu büyük ekosistem içerisinde üzerinde hiç ağaç bulunmayan açık alanlar, kayalıklar, su  yüzeyleri gibi alanlar olabileceği gibi, üzerinde ağaç olan her yere orman dememiz de mümkün olmamaktadır.</p> 
-                </div>
-                <div id="item-1-1">
-                    <h2>Orman Yangını Nedir?</h2>
-                    <p>Ormana zarar veren faktörler arasında, daima önemini koruyan orman yangınları; Türkiye ormanlarının sürekliliğini tehlikeye sokan    etkenlerden biridir. Orman yangını, açık alanda gerçekleştiği için rüzgâr ve yanıcı madde gibi doğal koşulların etkisi altında yayılma eğiliminde olan, başta odun, yaprak ve dal olmak üzere ormanda bulunan pek çok yanıcı materyali ve canlı ağaçları yakan yangın türüdür. Orman yangınlarının açık alanda gerçekleşmesi ve yayılma eğilimi söndürme işlemlerini zorlaştıran ana faktördür.</p>
-
-                </div>
-                <div id="item-1-2">
-                    <h2>Orman Yangını Türleri Nelerdir?</h2>
-                    <p>Orman yangınları, toprak ile ağaç tepesi arasında mevcut tüm yanıcı maddelerin yanma derecesi ve şekline göre değişmektedir.</p>
-                    <p>Orman yangınları türleri;</p> 
-                    <ul> 
-                        <li>Toprak yangını</li>
-                        <li>Örtü yangını</li>
-                        <li>Tepe yangını</li>
-                    </ul>
-                  <p>Ülkemizin doğal koşulları gereği daha çok örtü ve tepe yangını görülmekte, toprak yangınına çok fazla rastlanılmamaktadır.</p>
-                </div>
-                <div id="item-1-3">
-                    <h2>Orman Yangınları Neden Çıkar?.</h2>
-                    <p>Orman yangınının meydana gelebilmesi için üç unsura gerek vardır. Bunlar yanıcı madde, oksijen ve tutuşturucu kaynaktır. Tutuşma sıcaklığı (ısı), oksijen ve yanıcı madde (yakıt) yeterli miktarda bir araya gelirse yanma olayı meydana gelir. Yanmayı meydana getiren bu üç faktörün oluşturduğu üçgene “Yangın Üçgeni” denir</p>
-                    <p>Bütün ormanlarda oksijen ve yanıcı madde bolca bulunmaktadır. O nedenle yangına neden olan esas faktör tutuşma sıcaklığını oluşturacak tutuşturucu kaynaktır. Bu kaynak kimi zaman yıldırım düşmesi ya da yanardağ patlaması gibi doğal olaylar olabileceği gibi kimi zaman da insan faaliyetleri olabilmektedir. Yangına neden olan insan faaliyetleri genellikle ihmal-kaza ve kasıt şeklinde iki ana gruba ayrılmaktadır.</p>
-                </div>
-                <div id="item-1-4">
-                    <h2>Türkiye'de Orman Yangınları Neden Çıkıyor?</h2>
-                    <p>Türkiye'de her on orman yangınından dokuzu insan faaliyetleri sonucunda çıkıyor. Yıldırım düşmesi nedeniyle çıkan yangınlar hem sayı olarak az hem de etkiledikleri alan olarak kısıtlı. İnsan faaliyetleri içerisinde ise en çok yangına neden olan faktörler anız yakma, sigara izmariti, enerji nakil hatlarından çıkan kıvılcımlar, piknik ateşi ve çoban ateşi gibi ihmal-kaza kategorisine giren etkenler. Kasıtlı olarak çıkarılan yangınlar ise sayıca daha az.</p>
-                </div>
-                <div id="item-1-5">
-                    <h2>Türkiye'de Her Yıl Ne Kadar Orman Yanıyor?</h2>
-                    <p>Son 20 yıla (2001-2020) bakıldığında Türkiye'de her yıl ortalama 2 bin 216 adet orman yangını çıkmakta ve yine ortalama 8 bin 319 hektar orman alanı yanmaktadır. Ancak son yıllarda hem çıkan orman yangını sayısında hem de yanan orman alanı miktarında artış yaşanmaktadır. İklim değişikliğinin etkisiyle önümüzdeki süreçte orman yangınları açısından risk ve tehlike düzeyinin sürekli artacağı tahmin edilmektedir.</p>
-                </div>
-                <div id="item-1-6">
-                    <h2>Orman Yangınlarını Önlemek Ya da Etkilerini Azaltmak İçin Neler Yapmalıyız?</h2>
-                    <p>Ülkemizdeki orman yangınlarının büyük bölümü insan kaynaklı olarak çıktığından çözümün de insan-orman ilişkilerinde aranması doğru olur. Her 10 orman yangınından dokuzunun insan kaynaklı olarak çıkması teorik olarak her 10 orman yangınının dokuzunun engellenebileceği anlamına gelir. Hem devlet kurumlarının hem de yurttaşların ortak çabaları ile çıkmadan engellenen bir yangın binlerce canlının yaşamının korunması, ekonomik ve sosyal hayatın güvencesi olan ormanlarımızın devamlılığı açısından son derece büyük önem taşımaktadır. Bu amaçla yapılması gerekenler şu şekilde özetlenebilir:</p>
-                </div>
-                <div id="item-1-7">
-                    <h3>Yurttaşlara düşen sorumluluklar:</h3>
-                    <p>Orman yangınlarının sayı ve etki gücü olarak azaltılması yalnızca devlet kurum ve kuruluşlarının çabaları ile ulaşılabilecek bir amaç değildir. Yurttaşlar olarak bizlere de düşen büyük sorumluluklar bulunmaktadır. Bu sorumlulukları yapılması ve yapılmaması gerekenler olarak iki başlık altında toplamak olanaklıdır.</p>
-                </div>
-                <div id="item-1-8">
-                    <h2>Orman Yangınlarını Önlemek için Yapılması Gerekenler.</h2>
-                    <ul>
-                        <li>Yangın sezonu boyunca ve özellikle yangına hassas dönemlerde (aşırı sıcak, kuru verüzgârlı havalarda) yetkili kamu otoritelerinin   uyarılarına mutlaka uyulmalı, bu uyarılar hakkında düzenli bilgi sahibi olabilmek için yayınlar (tv, gazete, internet vb.) sürekli olarak takip edilmelidir.</li>
-                        <li>Anız bırakan tarım alanlarının ormana yakın sınırları sürülerek, yanıcı maddeler alandan uzaklaştırılmalıdır.</li>
-                        <li>Yangın sezonu boyunca ve özellikle yangına hassas dönemlerde (aşırı sıcak, kuru ve rüzgârlı havalarda) yetkili kamu otoritelerinin uyarılarına mutlaka uyulmalı, bu uyarılar hakkında düzenli bilgi sahibi olabilmek için yayınlar (tv, gazete, internet vb.) sürekli olarak takip edilmelidir.</li>
-                        <li>Orman alanlarının içinde ya da yakınında yapılan bina ve tesislerde her türlü yangın önlemi alınmalı ve çıkması muhtemel yangınların ormana sıçramasını engelleyecek koruyucu düzenlemeler (yapı ile orman arasında yanıcı madde olmayan yeterli mesafe bırakmak, yangın söndürme sistemlerini hazır ve çalışır durumda tutmak, yangınlarla ilgili sürekli ve etkili bir gözetleme sistemi oluşturmak, bina içinde ya da çevresinde parlayıcı-patlayıcı madde bulundurmamak) yapılmalıdır. Bu önlemler aynı zamanda orman yangınları sırasında bina ve tesisler ile insanların zarar görmesini de engelleyecektir.</li>
-                        <li>Orman içi ya da yakınındaki bina ve tesislerin özellikle dış cephe ve çatılarının yanmaya karşı dayanıklı materyallerden yapılmasına özen gösterilmelidir.</li>
-                        <li>Orman alanlarına giriş-çıkış yapan ya da orman alanlarında kullanılan motorlu araçlar başta olmak üzere her türlü araç-gerecin kıvılcım çıkarmak yoluyla orman yangınına neden olmasını engelleyecek bakım ve onarımlar düzenli olarak yapılmalıdır.</li>
-                        <li>Acil durum haberleşme sistemlerinin sürekli çalışır durumda olduğundan emin olunmalıdır.</li>
-                        <li>Olası bir yangın durumunda yapılması gerekenlerin önceden planlanmalı ve sürekli gözden geçirilerek uygulamaya hazır halde bulunması sağlanmalıdır. Gerektiği durumlarda yetkili kurumlarla (ormancılık örgütü, itfaiye teşkilatı vb.) işbirliği içerisinde yangın tatbikatları gerçekleştirilmelidir.</li>
-                        <li>Orman yangınlarını önleme ve yangın sırasında yapılması gerekenler konusunda yayınlar (bilgilendirme kitapçıkları, gazete haberleri, belgeseller, web siteleri vb.) takip edilmeli ve bu konudaki bilgiler güncel tutulmalıdır.</li>
-                        <li>Orman alanlarındaki enerji nakil hatları özellikle rüzgârlı havalarda gözetim altında tutulmalı, risk yaratan durumlar derhal yetkili makamlara iletilmelidir.</li>
-                    </ul>
-               
-                </div>
-                <div id="item-1-9">
-                    <h2>Orman Yangınlarını Önlemek için Yapılmaması Gerekenler</h2>
-                    <ul>
-                        <li>Yangına hassas dönem ve alanlarda hiçbir şekilde ateş (çoban ateşi, kamp ateşi, piknik ateşi vb.) yakılmamalıdır. Herhangi bir nedenle ateş yakılması zorunlu ise ağaçlar, çalılar ya da kurumuş ot ve yapraklar gibi kolay tutuşabilecek alanlarda ateş yakılmamalı (kayalık alanlar, üzerinde bitki bulunmayan çıplak toprak parçaları tercih edilebilir), ateş yakmak için kolay tutuşan kimyasallar kesinlikle kullanılmamalı ve ateşin söndüğünden emin olmadan alandan uzaklaşılmamalıdır.</li>
-                        <li>Tarım alanlarında hasat sonrası kalan bitki kök ve gövdeleri (anız) yakılmamalıdır.</li>
-                        <li>Orman içi ya da yakınında sigara içilmemeli, hiçbir şekilde (sönmüş dahi olsa) sigara izmariti atılmamalıdır.</li>
-                        <li>Ormanlık alanlarda yapılan faaliyetlerde (piknik, doğa yürüyüşü, eğitim, bisiklet yarışı vb.) oluşan atıklar kesinlikle ormanda  bırakılmamalıdır. Bu atıklar asla taşmış çöp kutularına ya da çöp birikmiş açık alanlara bırakılmamalıdır.</li>
-                        <li>Orman içi ya da yakınındaki bina ve tesislerde açık alanda yakacak odun istiflenmemelidir.</li>
-                    </ul>
-                </div>
-                <div id="item-1-10">
-                    <h2>Orman Yangının Yaban Hayatı Üzerindeki Etkileri Nelerdir ?</h2>
-                    <ul>
-                        <li>Orman yangınlarının oluştuğu bölgelerde bulunan yaban hayvanları çıkan yangınlardan oldukça fazla ölçüde etkiye maruz kalırlar.      Farklı  tipte meydana gelen orman yangınlarının yine farklı tipteki hayvan türleri üstüde etkisi bulunmaktadır. Bu etkiler türe göre olumlu ya da  olumsuz olabilirler. Orman yangınlarının yaban hayatı üzerindeki etkileri şu şekilde sıralanabilir;</li>
-                        <li>Yaban hayvanları üzerinde direkt öldürücü bir etki oluşturabilir. Hayvanlar yangın içerisinde ise yanarak değil ise çıkan gazdan  kaynaklı zehirlenip ölebilirler.</li>
-                        <li> Yaşam alanları olan ormanlar yandığı zaman hayvanların da yaşam alanları yanmış olmaktadır. evsiz kalırlar.</li>
-                        <li>Orman yangını çıkan bölgede bitkiler de yandığı için besin maddelerinde azalma söz konusudur.</li>
-                        <li> Ormanın tamamı ile yanması sonucunda besin maddeleri de tamamen yok olmaktadır.</li>
-                        <li>Rekabet kurulabilecek diğer hayvan türleri yerleşim gösterebilir. Bu yerleşim sonucunda hayvanlar göç yapabilirler.</li>
-                    </ul>
-                </div>
             </div>
-        </div>
-    </div>
-</main>
 
-<!-- Footer -->
-
-<footer>
-    <div class="container">
-        <div class="row gy-3 p-4">
-            <div class="col-xs-12 col-md-4">
-                <h2 class="text-white">Doğa Koruma Vakfı</h2>
-                <p class="text-white-50">Email: info@dogakoruma.org</p>
-                <p class="text-white-50">Telefon: +90 123 456 7890</p>
-                <p class="text-white-50">Adres: Doğa Koruma Vakfı, Yeşil Sokak, No: 10, İstanbul</p>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <form action="">
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Email">
-                        <button type="submit" class="btn btn-outline-light">Abone Ol</button>
+            <div class="col-8 content">
+                <div data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-smooth-scroll="true"
+                    class="scrollspy-example-2" tabindex="0">
+                    <div id="item-1">
+                        <h1>Orman Nedir?</h1>
+                        <p>Orman denilince akla ağaçlar gelir. Bir arazi parçasının orman olup olmamasını belirleyen ana
+                            unsur ağaçlardırOrmanın ne olduğuna ya da ne olmadığına karar verirken temelde ağaçlara
+                            bakıyor olmamıza rağmen ormanın yalnızca ağaçlardan meydana geldiğini düşünmek yanıltıcıdır.
+                            Orman bir ekosistemdir ve bu ekosistemde ağaçlarla birlikte diğer canlılar (çalılar ve otsu
+                            bitkiler, hayvanlar, mikroorganizmalar vb.) ile hava, toprak ve su gibi unsurlar belirli bir
+                            denge içerisinde bir arada bulunurlar. Aslında orman ağaçlarla birlikte diğer pek çok canlı
+                            türünün, hava, toprak ve su ile etkileşim içerisinde oluşturmuş olduğu bir yaşam birliğidir.
+                            O nedenle adına orman dediğimiz bu yaşam birliği, bu büyük ekosistem içerisinde üzerinde hiç
+                            ağaç bulunmayan açık alanlar, kayalıklar, su yüzeyleri gibi alanlar olabileceği gibi,
+                            üzerinde ağaç olan her yere orman dememiz de mümkün olmamaktadır.</p>
                     </div>
-                </form>
-            </div>
-            <div class="col-xs-12 col-md-4">
-                <div class="text-center text-md-end ">
-                    <a href="#" class="btn btn-icon btn-outline-light social">
-                        <i class="fa-brands fa-facebook-f"></i>
-                    </a>
-                    <a href="#" class="btn btn-icon btn-outline-light">
-                        <i class="fa-brands fa-twitter"></i>
-                    </a>
-                    <a href="#" class="btn btn-icon btn-outline-light">
-                        <i class="fa-brands fa-instagram"></i>
-                    </a>
-                    <a href="#" class="btn btn-icon btn-outline-light">
-                        <i class="fa-brands fa-pinterest-p"></i>
-                    </a>
+                    <div id="item-1-1">
+                        <h2>Orman Yangını Nedir?</h2>
+                        <p>Ormana zarar veren faktörler arasında, daima önemini koruyan orman yangınları; Türkiye
+                            ormanlarının sürekliliğini tehlikeye sokan etkenlerden biridir. Orman yangını, açık alanda
+                            gerçekleştiği için rüzgâr ve yanıcı madde gibi doğal koşulların etkisi altında yayılma
+                            eğiliminde olan, başta odun, yaprak ve dal olmak üzere ormanda bulunan pek çok yanıcı
+                            materyali ve canlı ağaçları yakan yangın türüdür. Orman yangınlarının açık alanda
+                            gerçekleşmesi ve yayılma eğilimi söndürme işlemlerini zorlaştıran ana faktördür.</p>
+
+                    </div>
+                    <div id="item-1-2">
+                        <h2>Orman Yangını Türleri Nelerdir?</h2>
+                        <p>Orman yangınları, toprak ile ağaç tepesi arasında mevcut tüm yanıcı maddelerin yanma derecesi
+                            ve şekline göre değişmektedir.</p>
+                        <p>Orman yangınları türleri;</p>
+                        <ul>
+                            <li>Toprak yangını</li>
+                            <li>Örtü yangını</li>
+                            <li>Tepe yangını</li>
+                        </ul>
+                        <p>Ülkemizin doğal koşulları gereği daha çok örtü ve tepe yangını görülmekte, toprak yangınına
+                            çok fazla rastlanılmamaktadır.</p>
+                    </div>
+                    <div id="item-1-3">
+                        <h2>Orman Yangınları Neden Çıkar?.</h2>
+                        <p>Orman yangınının meydana gelebilmesi için üç unsura gerek vardır. Bunlar yanıcı madde,
+                            oksijen ve tutuşturucu kaynaktır. Tutuşma sıcaklığı (ısı), oksijen ve yanıcı madde (yakıt)
+                            yeterli miktarda bir araya gelirse yanma olayı meydana gelir. Yanmayı meydana getiren bu üç
+                            faktörün oluşturduğu üçgene “Yangın Üçgeni” denir</p>
+                        <p>Bütün ormanlarda oksijen ve yanıcı madde bolca bulunmaktadır. O nedenle yangına neden olan
+                            esas faktör tutuşma sıcaklığını oluşturacak tutuşturucu kaynaktır. Bu kaynak kimi zaman
+                            yıldırım düşmesi ya da yanardağ patlaması gibi doğal olaylar olabileceği gibi kimi zaman da
+                            insan faaliyetleri olabilmektedir. Yangına neden olan insan faaliyetleri genellikle
+                            ihmal-kaza ve kasıt şeklinde iki ana gruba ayrılmaktadır.</p>
+                    </div>
+                    <div id="item-1-4">
+                        <h2>Türkiye'de Orman Yangınları Neden Çıkıyor?</h2>
+                        <p>Türkiye'de her on orman yangınından dokuzu insan faaliyetleri sonucunda çıkıyor. Yıldırım
+                            düşmesi nedeniyle çıkan yangınlar hem sayı olarak az hem de etkiledikleri alan olarak
+                            kısıtlı. İnsan faaliyetleri içerisinde ise en çok yangına neden olan faktörler anız yakma,
+                            sigara izmariti, enerji nakil hatlarından çıkan kıvılcımlar, piknik ateşi ve çoban ateşi
+                            gibi ihmal-kaza kategorisine giren etkenler. Kasıtlı olarak çıkarılan yangınlar ise sayıca
+                            daha az.</p>
+                    </div>
+                    <div id="item-1-5">
+                        <h2>Türkiye'de Her Yıl Ne Kadar Orman Yanıyor?</h2>
+                        <p>Son 20 yıla (2001-2020) bakıldığında Türkiye'de her yıl ortalama 2 bin 216 adet orman yangını
+                            çıkmakta ve yine ortalama 8 bin 319 hektar orman alanı yanmaktadır. Ancak son yıllarda hem
+                            çıkan orman yangını sayısında hem de yanan orman alanı miktarında artış yaşanmaktadır. İklim
+                            değişikliğinin etkisiyle önümüzdeki süreçte orman yangınları açısından risk ve tehlike
+                            düzeyinin sürekli artacağı tahmin edilmektedir.</p>
+                    </div>
+                    <div id="item-1-6">
+                        <h2>Orman Yangınlarını Önlemek Ya da Etkilerini Azaltmak İçin Neler Yapmalıyız?</h2>
+                        <p>Ülkemizdeki orman yangınlarının büyük bölümü insan kaynaklı olarak çıktığından çözümün de
+                            insan-orman ilişkilerinde aranması doğru olur. Her 10 orman yangınından dokuzunun insan
+                            kaynaklı olarak çıkması teorik olarak her 10 orman yangınının dokuzunun engellenebileceği
+                            anlamına gelir. Hem devlet kurumlarının hem de yurttaşların ortak çabaları ile çıkmadan
+                            engellenen bir yangın binlerce canlının yaşamının korunması, ekonomik ve sosyal hayatın
+                            güvencesi olan ormanlarımızın devamlılığı açısından son derece büyük önem taşımaktadır. Bu
+                            amaçla yapılması gerekenler şu şekilde özetlenebilir:</p>
+                    </div>
+                    <div id="item-1-7">
+                        <h3>Yurttaşlara düşen sorumluluklar:</h3>
+                        <p>Orman yangınlarının sayı ve etki gücü olarak azaltılması yalnızca devlet kurum ve
+                            kuruluşlarının çabaları ile ulaşılabilecek bir amaç değildir. Yurttaşlar olarak bizlere de
+                            düşen büyük sorumluluklar bulunmaktadır. Bu sorumlulukları yapılması ve yapılmaması
+                            gerekenler olarak iki başlık altında toplamak olanaklıdır.</p>
+                    </div>
+                    <div id="item-1-8">
+                        <h2>Orman Yangınlarını Önlemek için Yapılması Gerekenler.</h2>
+                        <ul>
+                            <li>Yangın sezonu boyunca ve özellikle yangına hassas dönemlerde (aşırı sıcak, kuru
+                                verüzgârlı havalarda) yetkili kamu otoritelerinin uyarılarına mutlaka uyulmalı, bu
+                                uyarılar hakkında düzenli bilgi sahibi olabilmek için yayınlar (tv, gazete, internet
+                                vb.) sürekli olarak takip edilmelidir.</li>
+                            <li>Anız bırakan tarım alanlarının ormana yakın sınırları sürülerek, yanıcı maddeler alandan
+                                uzaklaştırılmalıdır.</li>
+                            <li>Yangın sezonu boyunca ve özellikle yangına hassas dönemlerde (aşırı sıcak, kuru ve
+                                rüzgârlı havalarda) yetkili kamu otoritelerinin uyarılarına mutlaka uyulmalı, bu
+                                uyarılar hakkında düzenli bilgi sahibi olabilmek için yayınlar (tv, gazete, internet
+                                vb.) sürekli olarak takip edilmelidir.</li>
+                            <li>Orman alanlarının içinde ya da yakınında yapılan bina ve tesislerde her türlü yangın
+                                önlemi alınmalı ve çıkması muhtemel yangınların ormana sıçramasını engelleyecek koruyucu
+                                düzenlemeler (yapı ile orman arasında yanıcı madde olmayan yeterli mesafe bırakmak,
+                                yangın söndürme sistemlerini hazır ve çalışır durumda tutmak, yangınlarla ilgili sürekli
+                                ve etkili bir gözetleme sistemi oluşturmak, bina içinde ya da çevresinde
+                                parlayıcı-patlayıcı madde bulundurmamak) yapılmalıdır. Bu önlemler aynı zamanda orman
+                                yangınları sırasında bina ve tesisler ile insanların zarar görmesini de engelleyecektir.
+                            </li>
+                            <li>Orman içi ya da yakınındaki bina ve tesislerin özellikle dış cephe ve çatılarının
+                                yanmaya karşı dayanıklı materyallerden yapılmasına özen gösterilmelidir.</li>
+                            <li>Orman alanlarına giriş-çıkış yapan ya da orman alanlarında kullanılan motorlu araçlar
+                                başta olmak üzere her türlü araç-gerecin kıvılcım çıkarmak yoluyla orman yangınına neden
+                                olmasını engelleyecek bakım ve onarımlar düzenli olarak yapılmalıdır.</li>
+                            <li>Acil durum haberleşme sistemlerinin sürekli çalışır durumda olduğundan emin olunmalıdır.
+                            </li>
+                            <li>Olası bir yangın durumunda yapılması gerekenlerin önceden planlanmalı ve sürekli gözden
+                                geçirilerek uygulamaya hazır halde bulunması sağlanmalıdır. Gerektiği durumlarda yetkili
+                                kurumlarla (ormancılık örgütü, itfaiye teşkilatı vb.) işbirliği içerisinde yangın
+                                tatbikatları gerçekleştirilmelidir.</li>
+                            <li>Orman yangınlarını önleme ve yangın sırasında yapılması gerekenler konusunda yayınlar
+                                (bilgilendirme kitapçıkları, gazete haberleri, belgeseller, web siteleri vb.) takip
+                                edilmeli ve bu konudaki bilgiler güncel tutulmalıdır.</li>
+                            <li>Orman alanlarındaki enerji nakil hatları özellikle rüzgârlı havalarda gözetim altında
+                                tutulmalı, risk yaratan durumlar derhal yetkili makamlara iletilmelidir.</li>
+                        </ul>
+
+                    </div>
+                    <div id="item-1-9">
+                        <h2>Orman Yangınlarını Önlemek için Yapılmaması Gerekenler</h2>
+                        <ul>
+                            <li>Yangına hassas dönem ve alanlarda hiçbir şekilde ateş (çoban ateşi, kamp ateşi, piknik
+                                ateşi vb.) yakılmamalıdır. Herhangi bir nedenle ateş yakılması zorunlu ise ağaçlar,
+                                çalılar ya da kurumuş ot ve yapraklar gibi kolay tutuşabilecek alanlarda ateş
+                                yakılmamalı (kayalık alanlar, üzerinde bitki bulunmayan çıplak toprak parçaları tercih
+                                edilebilir), ateş yakmak için kolay tutuşan kimyasallar kesinlikle kullanılmamalı ve
+                                ateşin söndüğünden emin olmadan alandan uzaklaşılmamalıdır.</li>
+                            <li>Tarım alanlarında hasat sonrası kalan bitki kök ve gövdeleri (anız) yakılmamalıdır.</li>
+                            <li>Orman içi ya da yakınında sigara içilmemeli, hiçbir şekilde (sönmüş dahi olsa) sigara
+                                izmariti atılmamalıdır.</li>
+                            <li>Ormanlık alanlarda yapılan faaliyetlerde (piknik, doğa yürüyüşü, eğitim, bisiklet yarışı
+                                vb.) oluşan atıklar kesinlikle ormanda bırakılmamalıdır. Bu atıklar asla taşmış çöp
+                                kutularına ya da çöp birikmiş açık alanlara bırakılmamalıdır.</li>
+                            <li>Orman içi ya da yakınındaki bina ve tesislerde açık alanda yakacak odun
+                                istiflenmemelidir.</li>
+                        </ul>
+                    </div>
+                    <div id="item-1-10">
+                        <h2>Orman Yangının Yaban Hayatı Üzerindeki Etkileri Nelerdir ?</h2>
+                        <ul>
+                            <li>Orman yangınlarının oluştuğu bölgelerde bulunan yaban hayvanları çıkan yangınlardan
+                                oldukça fazla ölçüde etkiye maruz kalırlar. Farklı tipte meydana gelen orman
+                                yangınlarının yine farklı tipteki hayvan türleri üstüde etkisi bulunmaktadır. Bu etkiler
+                                türe göre olumlu ya da olumsuz olabilirler. Orman yangınlarının yaban hayatı üzerindeki
+                                etkileri şu şekilde sıralanabilir;</li>
+                            <li>Yaban hayvanları üzerinde direkt öldürücü bir etki oluşturabilir. Hayvanlar yangın
+                                içerisinde ise yanarak değil ise çıkan gazdan kaynaklı zehirlenip ölebilirler.</li>
+                            <li> Yaşam alanları olan ormanlar yandığı zaman hayvanların da yaşam alanları yanmış
+                                olmaktadır. evsiz kalırlar.</li>
+                            <li>Orman yangını çıkan bölgede bitkiler de yandığı için besin maddelerinde azalma söz
+                                konusudur.</li>
+                            <li> Ormanın tamamı ile yanması sonucunda besin maddeleri de tamamen yok olmaktadır.</li>
+                            <li>Rekabet kurulabilecek diğer hayvan türleri yerleşim gösterebilir. Bu yerleşim sonucunda
+                                hayvanlar göç yapabilirler.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="col-md-12">
-                <p class="text-center text-white">
-                    @2024 Tüm Hakları Saklıdır.
-                </p>
+        </div>
+    </main>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row gy-3 p-4">
+                <div class="col-xs-12 col-md-4">
+                    <h2 class="text-white">Doğa Koruma Vakfı</h2>
+                    <p class="text-white-50">Email: info@dogakoruma.org</p>
+                    <p class="text-white-50">Telefon: +90 123 456 7890</p>
+                    <p class="text-white-50">Adres: Doğa Koruma Vakfı, Yeşil Sokak, No: 10, İstanbul</p>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <form action="">
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Email">
+                            <button type="submit" class="btn btn-outline-light">Abone Ol</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-xs-12 col-md-4">
+                    <div class="text-center text-md-end ">
+                        <a href="#" class="btn btn-icon btn-outline-light social">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon btn-outline-light">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon btn-outline-light">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="btn btn-icon btn-outline-light">
+                            <i class="fa-brands fa-pinterest-p"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <p class="text-center text-white">
+                        @2024 Tüm Hakları Saklıdır.
+                    </p>
+                </div>
             </div>
         </div>
-    </div>
-</footer>
+    </footer>
 
-<!-- Scripts -->
+    <!-- Scripts -->
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+        </script>
 
-<!-- Swiper JS -->
-<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
+    <!-- Swiper JS -->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/swiper-bundle.min.js"></script>
 
-<!-- JavaScript -->
-<script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
+    <!-- JavaScript -->
+    <script src="//cdn.jsdelivr.net/gh/freeps2/a7rarpress@main/script.js"></script>
 </body>
 
 </html>
